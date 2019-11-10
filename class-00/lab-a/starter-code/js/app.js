@@ -41,6 +41,8 @@ function displayPics(){
   // Rando variable declared inside the function so it's locally regarding to the scope of the function 
   console.log(viewed);
 
+
+
   for (let i = 0; i < 3; i++){
     const temp = viewed.shift();
     pics[i].src = allProducts[temp].path;
@@ -48,6 +50,9 @@ function displayPics(){
     allProducts[temp].views += 1;
   }
 }
+
+
+
 
 function handleClick(event) {
   if (event.target.id === 'image_container') {
